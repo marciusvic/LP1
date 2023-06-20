@@ -1,0 +1,42 @@
+\hypertarget{leitura_8cpp}{}\doxysection{Q2/leitura.cpp File Reference}
+\label{leitura_8cpp}\index{Q2/leitura.cpp@{Q2/leitura.cpp}}
+
+
+Implementação das funções para ler números de um arquivo.  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include \char`\"{}leitura.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{leitura_8cpp_a82375799a64c8b3c81916bef2ea92ff8}{ler\+Numeros}} (std\+::vector$<$ int $>$ \&numeros, const std\+::string \&nome\+Arquivo)
+\begin{DoxyCompactList}\small\item\em Lê números de um arquivo e armazena em um vetor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Implementação das funções para ler números de um arquivo. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{leitura_8cpp_a82375799a64c8b3c81916bef2ea92ff8}\label{leitura_8cpp_a82375799a64c8b3c81916bef2ea92ff8}} 
+\index{leitura.cpp@{leitura.cpp}!lerNumeros@{lerNumeros}}
+\index{lerNumeros@{lerNumeros}!leitura.cpp@{leitura.cpp}}
+\doxysubsubsection{\texorpdfstring{lerNumeros()}{lerNumeros()}}
+{\footnotesize\ttfamily void ler\+Numeros (\begin{DoxyParamCaption}\item[{std\+::vector$<$ int $>$ \&}]{numeros,  }\item[{const std\+::string \&}]{nome\+Arquivo }\end{DoxyParamCaption})}
+
+
+
+Lê números de um arquivo e armazena em um vetor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em numeros} & O vetor para armazenar os números lidos \\
+\hline
+{\em nome\+Arquivo} & O nome do arquivo de entrada\\
+\hline
+\end{DoxyParams}
+Abre o arquivo de entrada especificado pelo nome\+Arquivo e lê 10 números inteiros, armazenando-\/os no vetor numeros. Se ocorrer algum erro ao abrir o arquivo, exibe uma mensagem de erro. 

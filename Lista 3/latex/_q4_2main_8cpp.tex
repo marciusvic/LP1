@@ -1,0 +1,91 @@
+\hypertarget{_q4_2main_8cpp}{}\doxysection{Q4/main.cpp File Reference}
+\label{_q4_2main_8cpp}\index{Q4/main.cpp@{Q4/main.cpp}}
+
+
+Contém a função principal do programa que lê dados de funcionários de um arquivo e imprime a folha de pagamento por departamento.  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include \char`\"{}Funcionario.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Departamento.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_q4_2main_8cpp_af7b3c17e86a80eef8321dd6074272886}{copia\+\_\+dados}} (FILE $\ast$fl, int n, std\+::vector$<$ \mbox{\hyperlink{class_funcionario}{Funcionario}} $>$ \&pessoal)
+\begin{DoxyCompactList}\small\item\em Copia os dados de funcionários de um arquivo para um vetor de objetos \mbox{\hyperlink{class_funcionario}{Funcionario}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_q4_2main_8cpp_af0c93e0f2545aaa5b14617dc379b7aaf}{imprime\+\_\+folha\+\_\+pagamento}} (int n, const std\+::vector$<$ \mbox{\hyperlink{class_funcionario}{Funcionario}} $>$ \&pessoal, char depto)
+\begin{DoxyCompactList}\small\item\em Imprime a folha de pagamento de um determinado departamento. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_q4_2main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\begin{DoxyCompactList}\small\item\em Função principal do programa. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Contém a função principal do programa que lê dados de funcionários de um arquivo e imprime a folha de pagamento por departamento. 
+
+Programa em C++ que lê dados de funcionários de um arquivo e imprime a folha de pagamento por departamento. \begin{DoxyAuthor}{Author}
+Márcio Victor 
+
+20210090869 
+\end{DoxyAuthor}
+\begin{DoxySince}{Since}
+04/06/2023 
+\end{DoxySince}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_q4_2main_8cpp_af7b3c17e86a80eef8321dd6074272886}\label{_q4_2main_8cpp_af7b3c17e86a80eef8321dd6074272886}} 
+\index{main.cpp@{main.cpp}!copia\_dados@{copia\_dados}}
+\index{copia\_dados@{copia\_dados}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{copia\_dados()}{copia\_dados()}}
+{\footnotesize\ttfamily void copia\+\_\+dados (\begin{DoxyParamCaption}\item[{FILE $\ast$}]{fl,  }\item[{int}]{n,  }\item[{std\+::vector$<$ \mbox{\hyperlink{class_funcionario}{Funcionario}} $>$ \&}]{pessoal }\end{DoxyParamCaption})}
+
+
+
+Copia os dados de funcionários de um arquivo para um vetor de objetos \mbox{\hyperlink{class_funcionario}{Funcionario}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fl} & Ponteiro para o arquivo de dados. \\
+\hline
+{\em n} & Número de funcionários a serem lidos. \\
+\hline
+{\em pessoal} & Vetor de objetos \mbox{\hyperlink{class_funcionario}{Funcionario}} onde os dados serão armazenados. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_q4_2main_8cpp_af0c93e0f2545aaa5b14617dc379b7aaf}\label{_q4_2main_8cpp_af0c93e0f2545aaa5b14617dc379b7aaf}} 
+\index{main.cpp@{main.cpp}!imprime\_folha\_pagamento@{imprime\_folha\_pagamento}}
+\index{imprime\_folha\_pagamento@{imprime\_folha\_pagamento}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{imprime\_folha\_pagamento()}{imprime\_folha\_pagamento()}}
+{\footnotesize\ttfamily void imprime\+\_\+folha\+\_\+pagamento (\begin{DoxyParamCaption}\item[{int}]{n,  }\item[{const std\+::vector$<$ \mbox{\hyperlink{class_funcionario}{Funcionario}} $>$ \&}]{pessoal,  }\item[{char}]{depto }\end{DoxyParamCaption})}
+
+
+
+Imprime a folha de pagamento de um determinado departamento. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & Número total de funcionários. \\
+\hline
+{\em pessoal} & Vetor de objetos \mbox{\hyperlink{class_funcionario}{Funcionario}} com os dados dos funcionários. \\
+\hline
+{\em depto} & Código do departamento a ser impresso. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_q4_2main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{_q4_2main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Função principal do programa. 
+
+\begin{DoxyReturn}{Returns}
+0 em caso de sucesso, 1 em caso de erro ao abrir o arquivo. 
+\end{DoxyReturn}

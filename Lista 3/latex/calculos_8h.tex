@@ -1,0 +1,80 @@
+\hypertarget{calculos_8h}{}\doxysection{Q2/calculos.h File Reference}
+\label{calculos_8h}\index{Q2/calculos.h@{Q2/calculos.h}}
+
+
+Declaração das funções para realizar cálculos em um vetor de números inteiros.  
+
+
+{\ttfamily \#include $<$vector$>$}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{calculos_8h_a96b643a9920de964ed641002c143d0ba}{encontrar\+Menor}} (const std\+::vector$<$ int $>$ \&numeros)
+\begin{DoxyCompactList}\small\item\em Encontra o menor elemento em um vetor de números inteiros. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{calculos_8h_aa45e7071684469b2cf7f35564c6ac789}{encontrar\+Maior}} (const std\+::vector$<$ int $>$ \&numeros)
+\begin{DoxyCompactList}\small\item\em Encontra o maior elemento em um vetor de números inteiros. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{calculos_8h_a1389f93f7eaf752f9b612a6bc5cad165}{calcular\+Media}} (const std\+::vector$<$ int $>$ \&numeros)
+\begin{DoxyCompactList}\small\item\em Calcula a média dos elementos em um vetor de números inteiros. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Declaração das funções para realizar cálculos em um vetor de números inteiros. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{calculos_8h_a1389f93f7eaf752f9b612a6bc5cad165}\label{calculos_8h_a1389f93f7eaf752f9b612a6bc5cad165}} 
+\index{calculos.h@{calculos.h}!calcularMedia@{calcularMedia}}
+\index{calcularMedia@{calcularMedia}!calculos.h@{calculos.h}}
+\doxysubsubsection{\texorpdfstring{calcularMedia()}{calcularMedia()}}
+{\footnotesize\ttfamily double calcular\+Media (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ int $>$ \&}]{numeros }\end{DoxyParamCaption})}
+
+
+
+Calcula a média dos elementos em um vetor de números inteiros. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em numeros} & O vetor de números inteiros \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A média dos elementos no vetor
+\end{DoxyReturn}
+Percorre o vetor e acumula a soma dos elementos. Divide a soma pelo número de elementos para obter a média. \mbox{\Hypertarget{calculos_8h_aa45e7071684469b2cf7f35564c6ac789}\label{calculos_8h_aa45e7071684469b2cf7f35564c6ac789}} 
+\index{calculos.h@{calculos.h}!encontrarMaior@{encontrarMaior}}
+\index{encontrarMaior@{encontrarMaior}!calculos.h@{calculos.h}}
+\doxysubsubsection{\texorpdfstring{encontrarMaior()}{encontrarMaior()}}
+{\footnotesize\ttfamily int encontrar\+Maior (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ int $>$ \&}]{numeros }\end{DoxyParamCaption})}
+
+
+
+Encontra o maior elemento em um vetor de números inteiros. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em numeros} & O vetor de números inteiros \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+O maior elemento no vetor
+\end{DoxyReturn}
+Percorre o vetor e compara cada elemento com o maior valor encontrado até o momento. Retorna o maior valor encontrado. \mbox{\Hypertarget{calculos_8h_a96b643a9920de964ed641002c143d0ba}\label{calculos_8h_a96b643a9920de964ed641002c143d0ba}} 
+\index{calculos.h@{calculos.h}!encontrarMenor@{encontrarMenor}}
+\index{encontrarMenor@{encontrarMenor}!calculos.h@{calculos.h}}
+\doxysubsubsection{\texorpdfstring{encontrarMenor()}{encontrarMenor()}}
+{\footnotesize\ttfamily int encontrar\+Menor (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ int $>$ \&}]{numeros }\end{DoxyParamCaption})}
+
+
+
+Encontra o menor elemento em um vetor de números inteiros. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em numeros} & O vetor de números inteiros \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+O menor elemento no vetor
+\end{DoxyReturn}
+Percorre o vetor e compara cada elemento com o menor valor encontrado até o momento. Retorna o menor valor encontrado. 

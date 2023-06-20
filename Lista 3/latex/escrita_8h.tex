@@ -1,0 +1,43 @@
+\hypertarget{escrita_8h}{}\doxysection{Q2/escrita.h File Reference}
+\label{escrita_8h}\index{Q2/escrita.h@{Q2/escrita.h}}
+
+
+Declaração das funções para escrever resultados em um arquivo.  
+
+
+{\ttfamily \#include $<$string$>$}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{escrita_8h_a1d6e12d09c39d93142b56a22105da774}{escrever\+Resultado}} (int menor, int maior, double media, const std\+::string \&nome\+Arquivo)
+\begin{DoxyCompactList}\small\item\em Escreve o menor, o maior e a média em um arquivo. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Declaração das funções para escrever resultados em um arquivo. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{escrita_8h_a1d6e12d09c39d93142b56a22105da774}\label{escrita_8h_a1d6e12d09c39d93142b56a22105da774}} 
+\index{escrita.h@{escrita.h}!escreverResultado@{escreverResultado}}
+\index{escreverResultado@{escreverResultado}!escrita.h@{escrita.h}}
+\doxysubsubsection{\texorpdfstring{escreverResultado()}{escreverResultado()}}
+{\footnotesize\ttfamily void escrever\+Resultado (\begin{DoxyParamCaption}\item[{int}]{menor,  }\item[{int}]{maior,  }\item[{double}]{media,  }\item[{const std\+::string \&}]{nome\+Arquivo }\end{DoxyParamCaption})}
+
+
+
+Escreve o menor, o maior e a média em um arquivo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em menor} & O menor elemento \\
+\hline
+{\em maior} & O maior elemento \\
+\hline
+{\em media} & A média dos elementos \\
+\hline
+{\em nome\+Arquivo} & O nome do arquivo de saída\\
+\hline
+\end{DoxyParams}
+Abre o arquivo de saída especificado pelo nome\+Arquivo e escreve o menor, o maior e a média separados por linhas. Se ocorrer algum erro ao abrir o arquivo, exibe uma mensagem de erro. 

@@ -1,0 +1,8 @@
+Nome: Amanda	Média: 7.5	Situação: Aprovado
+Nome: Alberto	Média: 5.2	Situação: Reprovado
+Nome: Jane	Média: 6.4	Situação: Reprovado
+Nome: Igor	Média: 8.8	Situação: Aprovado
+Nome: Samara	Média: 9.0	Situação: Aprovado
+Nome: Maria Luiza	Média: 10.0	Situação: Aprovado
+Nome: Cesar	Média: 9.0	Situação: Aprovado
+Nome: Pedro Felipe	Média: 7.0	Situação: Aprovado

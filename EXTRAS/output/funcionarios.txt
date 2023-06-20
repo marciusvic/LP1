@@ -1,0 +1,5 @@
+Nome: Jo�o, Salário: 2500
+Nome: Maria, Salário: 3000
+Nome: Pedro, Salário: 2000
+Nome: Ana, Salário: 3500
+Nome: Carlos, Salário: 2800

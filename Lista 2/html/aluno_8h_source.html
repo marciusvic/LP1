@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>LISTA 2 LP1: Código-Fonte de Q3/aluno.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">LISTA 2 LP1<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Lista de 3 questões da materia linguagem de programação 1</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhum resultado encontrado</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_39998aecaa8df2f1526870d06e221cf5.html">Q3</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">aluno.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="aluno_8h.html">Vá para a documentação desse arquivo.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#ifndef ALUNO_H</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#define ALUNO_H</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="class_aluno.html">   15</a></span><span class="keyword">class </span><a class="code hl_class" href="class_aluno.html">Aluno</a> {</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keywordtype">int</span> matricula; </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    std::string nome; </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keywordtype">float</span> nota1; </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keywordtype">float</span> nota2; </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keywordtype">float</span> nota3; </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_aluno.html#ad8b27d8314f8c8bb9cd9f78f667a83ac">setMatricula</a>(<span class="keywordtype">int</span> _matricula);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_aluno.html#a7d3e98490f848d448bf98096e2b8e43b">setNome</a>(std::string _nome);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_aluno.html#a986a956ef710eb178edac6e874ea15d2">setNota1</a>(<span class="keywordtype">float</span> _nota1);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_aluno.html#ac8b1ecfbef0fae913094fa81289ef4f6">setNota2</a>(<span class="keywordtype">float</span> _nota2);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_aluno.html#a6a98c0ff0ef0d63dcf2e813506543a9d">setNota3</a>(<span class="keywordtype">float</span> _nota3);</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="class_aluno.html#a06f6a59f5584a6968f385e13a08fd008">getMatricula</a>();</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    std::string <a class="code hl_function" href="class_aluno.html#a3b730c10688d6f5287614676e71f3f50">getNome</a>();</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="keywordtype">float</span> <a class="code hl_function" href="class_aluno.html#adf6eaf859e37dbd2f0f0797300d951f9">getNota1</a>();</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="keywordtype">float</span> <a class="code hl_function" href="class_aluno.html#a665638aace216293a7947fe3625ac1bb">getNota2</a>();</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="keywordtype">float</span> <a class="code hl_function" href="class_aluno.html#ab01be4979eaa3875240093ef36bb85f5">getNota3</a>();</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    <span class="keywordtype">float</span> <a class="code hl_function" href="class_aluno.html#a07db755c788a52b148d61c062b8569a7">getMedia</a>();</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>};</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
+<div class="ttc" id="aclass_aluno_html"><div class="ttname"><a href="class_aluno.html">Aluno</a></div><div class="ttdoc">Representa um aluno com matrícula, nome e notas.</div><div class="ttdef"><b>Definition:</b> aluno.h:15</div></div>
+<div class="ttc" id="aclass_aluno_html_a06f6a59f5584a6968f385e13a08fd008"><div class="ttname"><a href="class_aluno.html#a06f6a59f5584a6968f385e13a08fd008">Aluno::getMatricula</a></div><div class="ttdeci">int getMatricula()</div><div class="ttdoc">Obtém a matrícula do aluno.</div><div class="ttdef"><b>Definition:</b> aluno.cpp:28</div></div>
+<div class="ttc" id="aclass_aluno_html_a07db755c788a52b148d61c062b8569a7"><div class="ttname"><a href="class_aluno.html#a07db755c788a52b148d61c062b8569a7">Aluno::getMedia</a></div><div class="ttdeci">float getMedia()</div><div class="ttdoc">Calcula a média das notas do aluno.</div><div class="ttdef"><b>Definition:</b> aluno.cpp:48</div></div>
+<div class="ttc" id="aclass_aluno_html_a3b730c10688d6f5287614676e71f3f50"><div class="ttname"><a href="class_aluno.html#a3b730c10688d6f5287614676e71f3f50">Aluno::getNome</a></div><div class="ttdeci">std::string getNome()</div><div class="ttdoc">Obtém o nome do aluno.</div><div class="ttdef"><b>Definition:</b> aluno.cpp:32</div></div>
+<div class="ttc" id="aclass_aluno_html_a665638aace216293a7947fe3625ac1bb"><div class="ttname"><a href="class_aluno.html#a665638aace216293a7947fe3625ac1bb">Aluno::getNota2</a></div><div class="ttdeci">float getNota2()</div><div class="ttdoc">Obtém a nota da segunda avaliação do aluno.</div><div class="ttdef"><b>Definition:</b> aluno.cpp:40</div></div>
+<div class="ttc" id="aclass_aluno_html_a6a98c0ff0ef0d63dcf2e813506543a9d"><div class="ttname"><a href="class_aluno.html#a6a98c0ff0ef0d63dcf2e813506543a9d">Aluno::setNota3</a></div><div class="ttdeci">void setNota3(float _nota3)</div><div class="ttdoc">Define a nota da terceira avaliação do aluno.</div><div class="ttdef"><b>Definition:</b> aluno.cpp:24</div></div>
+<div class="ttc" id="aclass_aluno_html_a7d3e98490f848d448bf98096e2b8e43b"><div class="ttname"><a href="class_aluno.html#a7d3e98490f848d448bf98096e2b8e43b">Aluno::setNome</a></div><div class="ttdeci">void setNome(std::string _nome)</div><div class="ttdoc">Define o nome do aluno.</div><div class="ttdef"><b>Definition:</b> aluno.cpp:12</div></div>
+<div class="ttc" id="aclass_aluno_html_a986a956ef710eb178edac6e874ea15d2"><div class="ttname"><a href="class_aluno.html#a986a956ef710eb178edac6e874ea15d2">Aluno::setNota1</a></div><div class="ttdeci">void setNota1(float _nota1)</div><div class="ttdoc">Define a nota da primeira avaliação do aluno.</div><div class="ttdef"><b>Definition:</b> aluno.cpp:16</div></div>
+<div class="ttc" id="aclass_aluno_html_ab01be4979eaa3875240093ef36bb85f5"><div class="ttname"><a href="class_aluno.html#ab01be4979eaa3875240093ef36bb85f5">Aluno::getNota3</a></div><div class="ttdeci">float getNota3()</div><div class="ttdoc">Obtém a nota da terceira avaliação do aluno.</div><div class="ttdef"><b>Definition:</b> aluno.cpp:44</div></div>
+<div class="ttc" id="aclass_aluno_html_ac8b1ecfbef0fae913094fa81289ef4f6"><div class="ttname"><a href="class_aluno.html#ac8b1ecfbef0fae913094fa81289ef4f6">Aluno::setNota2</a></div><div class="ttdeci">void setNota2(float _nota2)</div><div class="ttdoc">Define a nota da segunda avaliação do aluno.</div><div class="ttdef"><b>Definition:</b> aluno.cpp:20</div></div>
+<div class="ttc" id="aclass_aluno_html_ad8b27d8314f8c8bb9cd9f78f667a83ac"><div class="ttname"><a href="class_aluno.html#ad8b27d8314f8c8bb9cd9f78f667a83ac">Aluno::setMatricula</a></div><div class="ttdeci">void setMatricula(int _matricula)</div><div class="ttdoc">Define a matrícula do aluno.</div><div class="ttdef"><b>Definition:</b> aluno.cpp:8</div></div>
+<div class="ttc" id="aclass_aluno_html_adf6eaf859e37dbd2f0f0797300d951f9"><div class="ttname"><a href="class_aluno.html#adf6eaf859e37dbd2f0f0797300d951f9">Aluno::getNota1</a></div><div class="ttdeci">float getNota1()</div><div class="ttdoc">Obtém a nota da primeira avaliação do aluno.</div><div class="ttdef"><b>Definition:</b> aluno.cpp:36</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+</small></address>
+</body>
+</html>

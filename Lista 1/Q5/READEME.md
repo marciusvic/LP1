@@ -1,0 +1,2 @@
+mingw32-make
+comando para rodar makefile no windows

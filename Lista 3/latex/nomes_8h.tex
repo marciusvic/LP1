@@ -1,0 +1,57 @@
+\hypertarget{nomes_8h}{}\doxysection{Q1/nomes.h File Reference}
+\label{nomes_8h}\index{Q1/nomes.h@{Q1/nomes.h}}
+
+
+Declaração das funções para ler e exibir nomes a partir de um arquivo.  
+
+
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{nomes_8h_a418b03a6ef54c8d5e0ddf0108e421f25}{ler\+Nomes\+Arquivo}} (const std\+::string \&nome\+Arquivo, std\+::vector$<$ std\+::string $>$ \&nomes)
+\begin{DoxyCompactList}\small\item\em Lê os nomes de um arquivo e armazena em um vetor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{nomes_8h_a6659a0bdac4cf12206b270da0e497292}{exibir\+Nomes}} (const std\+::vector$<$ std\+::string $>$ \&nomes)
+\begin{DoxyCompactList}\small\item\em Exibe os nomes armazenados em um vetor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Declaração das funções para ler e exibir nomes a partir de um arquivo. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{nomes_8h_a6659a0bdac4cf12206b270da0e497292}\label{nomes_8h_a6659a0bdac4cf12206b270da0e497292}} 
+\index{nomes.h@{nomes.h}!exibirNomes@{exibirNomes}}
+\index{exibirNomes@{exibirNomes}!nomes.h@{nomes.h}}
+\doxysubsubsection{\texorpdfstring{exibirNomes()}{exibirNomes()}}
+{\footnotesize\ttfamily void exibir\+Nomes (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::string $>$ \&}]{nomes }\end{DoxyParamCaption})}
+
+
+
+Exibe os nomes armazenados em um vetor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nomes} & O vetor contendo os nomes a serem exibidos\\
+\hline
+\end{DoxyParams}
+Percorre o vetor de nomes e exibe cada nome em uma linha separada. \mbox{\Hypertarget{nomes_8h_a418b03a6ef54c8d5e0ddf0108e421f25}\label{nomes_8h_a418b03a6ef54c8d5e0ddf0108e421f25}} 
+\index{nomes.h@{nomes.h}!lerNomesArquivo@{lerNomesArquivo}}
+\index{lerNomesArquivo@{lerNomesArquivo}!nomes.h@{nomes.h}}
+\doxysubsubsection{\texorpdfstring{lerNomesArquivo()}{lerNomesArquivo()}}
+{\footnotesize\ttfamily void ler\+Nomes\+Arquivo (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{nome\+Arquivo,  }\item[{std\+::vector$<$ std\+::string $>$ \&}]{nomes }\end{DoxyParamCaption})}
+
+
+
+Lê os nomes de um arquivo e armazena em um vetor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nome\+Arquivo} & O nome do arquivo a ser lido \\
+\hline
+{\em nomes} & Um vetor para armazenar os nomes lidos\\
+\hline
+\end{DoxyParams}
+Abre o arquivo de entrada especificado pelo nome\+Arquivo e lê os nomes linha por linha, armazenando-\/os no vetor nomes. Se ocorrer algum erro ao abrir o arquivo, exibe uma mensagem de erro. 

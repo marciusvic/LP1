@@ -1,0 +1,93 @@
+\hypertarget{arquivo_8cpp}{}\doxysection{Q3/arquivo.cpp File Reference}
+\label{arquivo_8cpp}\index{Q3/arquivo.cpp@{Q3/arquivo.cpp}}
+
+
+Implementação das funções para processar alunos em arquivos.  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$iomanip$>$}\newline
+{\ttfamily \#include \char`\"{}arquivo.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{arquivo_8cpp_afcdc3e76cbcb53c82f9caccd82816456}{calcular\+Media\+ESituacao}} (double nota1, double nota2, double nota3, double \&media, std\+::string \&situacao)
+\begin{DoxyCompactList}\small\item\em Calcula a média e a situação de um aluno com base em suas notas. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{arquivo_8cpp_a49e5dd208b2e2f97171aa4c90be1c1d0}{processar\+Aluno}} (std\+::ofstream \&output, const std\+::string \&nome, double nota1, double nota2, double nota3)
+\begin{DoxyCompactList}\small\item\em Processa um aluno e escreve seu nome, média e situação em um arquivo. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{arquivo_8cpp_ad99ed4e593da57ae4e87fff827430dc3}{processar\+Arquivos}} (std\+::string input\+File, std\+::string output\+File)
+\begin{DoxyCompactList}\small\item\em Processa alunos em arquivos de entrada e escreve os resultados em um arquivo de saída. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Implementação das funções para processar alunos em arquivos. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{arquivo_8cpp_afcdc3e76cbcb53c82f9caccd82816456}\label{arquivo_8cpp_afcdc3e76cbcb53c82f9caccd82816456}} 
+\index{arquivo.cpp@{arquivo.cpp}!calcularMediaESituacao@{calcularMediaESituacao}}
+\index{calcularMediaESituacao@{calcularMediaESituacao}!arquivo.cpp@{arquivo.cpp}}
+\doxysubsubsection{\texorpdfstring{calcularMediaESituacao()}{calcularMediaESituacao()}}
+{\footnotesize\ttfamily void calcular\+Media\+ESituacao (\begin{DoxyParamCaption}\item[{double}]{nota1,  }\item[{double}]{nota2,  }\item[{double}]{nota3,  }\item[{double \&}]{media,  }\item[{std\+::string \&}]{situacao }\end{DoxyParamCaption})}
+
+
+
+Calcula a média e a situação de um aluno com base em suas notas. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nota1} & A primeira nota do aluno \\
+\hline
+{\em nota2} & A segunda nota do aluno \\
+\hline
+{\em nota3} & A terceira nota do aluno \\
+\hline
+{\em media} & Variável de saída para armazenar a média do aluno \\
+\hline
+{\em situacao} & Variável de saída para armazenar a situação do aluno (Aprovado ou Reprovado)\\
+\hline
+\end{DoxyParams}
+Calcula a média das notas do aluno e determina sua situação com base na média. Se a média for maior ou igual a 7.\+0, o aluno é considerado aprovado; caso contrário, é considerado reprovado. \mbox{\Hypertarget{arquivo_8cpp_a49e5dd208b2e2f97171aa4c90be1c1d0}\label{arquivo_8cpp_a49e5dd208b2e2f97171aa4c90be1c1d0}} 
+\index{arquivo.cpp@{arquivo.cpp}!processarAluno@{processarAluno}}
+\index{processarAluno@{processarAluno}!arquivo.cpp@{arquivo.cpp}}
+\doxysubsubsection{\texorpdfstring{processarAluno()}{processarAluno()}}
+{\footnotesize\ttfamily void processar\+Aluno (\begin{DoxyParamCaption}\item[{std\+::ofstream \&}]{output,  }\item[{const std\+::string \&}]{nome,  }\item[{double}]{nota1,  }\item[{double}]{nota2,  }\item[{double}]{nota3 }\end{DoxyParamCaption})}
+
+
+
+Processa um aluno e escreve seu nome, média e situação em um arquivo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em output} & O fluxo de saída para escrever os resultados \\
+\hline
+{\em nome} & O nome do aluno \\
+\hline
+{\em nota1} & A primeira nota do aluno \\
+\hline
+{\em nota2} & A segunda nota do aluno \\
+\hline
+{\em nota3} & A terceira nota do aluno\\
+\hline
+\end{DoxyParams}
+Calcula a média e a situação do aluno utilizando a função calcular\+Media\+ESituacao e escreve o nome, a média e a situação no arquivo de saída especificado pelo fluxo de saída. \mbox{\Hypertarget{arquivo_8cpp_ad99ed4e593da57ae4e87fff827430dc3}\label{arquivo_8cpp_ad99ed4e593da57ae4e87fff827430dc3}} 
+\index{arquivo.cpp@{arquivo.cpp}!processarArquivos@{processarArquivos}}
+\index{processarArquivos@{processarArquivos}!arquivo.cpp@{arquivo.cpp}}
+\doxysubsubsection{\texorpdfstring{processarArquivos()}{processarArquivos()}}
+{\footnotesize\ttfamily void processar\+Arquivos (\begin{DoxyParamCaption}\item[{std\+::string}]{input\+File,  }\item[{std\+::string}]{output\+File }\end{DoxyParamCaption})}
+
+
+
+Processa alunos em arquivos de entrada e escreve os resultados em um arquivo de saída. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\+File} & O nome do arquivo de entrada \\
+\hline
+{\em output\+File} & O nome do arquivo de saída\\
+\hline
+\end{DoxyParams}
+Abre o arquivo de entrada e o arquivo de saída especificados pelos nomes de arquivos. Processa cada linha do arquivo de entrada, lendo o nome do aluno e suas notas, e chama a função processar\+Aluno para calcular a média e a situação do aluno e escrever os resultados no arquivo de saída. Ao final do processamento, exibe uma mensagem indicando que o processamento foi concluído. 

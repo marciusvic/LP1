@@ -1,0 +1,29 @@
+\hypertarget{arquivo_8h}{}\doxysection{Q3/arquivo.h File Reference}
+\label{arquivo_8h}\index{Q3/arquivo.h@{Q3/arquivo.h}}
+{\ttfamily \#include $<$string$>$}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{arquivo_8h_ad99ed4e593da57ae4e87fff827430dc3}{processar\+Arquivos}} (std\+::string input\+File, std\+::string output\+File)
+\begin{DoxyCompactList}\small\item\em Processa alunos em arquivos de entrada e escreve os resultados em um arquivo de saída. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{arquivo_8h_ad99ed4e593da57ae4e87fff827430dc3}\label{arquivo_8h_ad99ed4e593da57ae4e87fff827430dc3}} 
+\index{arquivo.h@{arquivo.h}!processarArquivos@{processarArquivos}}
+\index{processarArquivos@{processarArquivos}!arquivo.h@{arquivo.h}}
+\doxysubsubsection{\texorpdfstring{processarArquivos()}{processarArquivos()}}
+{\footnotesize\ttfamily void processar\+Arquivos (\begin{DoxyParamCaption}\item[{std\+::string}]{input\+File,  }\item[{std\+::string}]{output\+File }\end{DoxyParamCaption})}
+
+
+
+Processa alunos em arquivos de entrada e escreve os resultados em um arquivo de saída. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\+File} & O nome do arquivo de entrada \\
+\hline
+{\em output\+File} & O nome do arquivo de saída\\
+\hline
+\end{DoxyParams}
+Abre o arquivo de entrada e o arquivo de saída especificados pelos nomes de arquivos. Processa cada linha do arquivo de entrada, lendo o nome do aluno e suas notas, e chama a função processar\+Aluno para calcular a média e a situação do aluno e escrever os resultados no arquivo de saída. Ao final do processamento, exibe uma mensagem indicando que o processamento foi concluído. 

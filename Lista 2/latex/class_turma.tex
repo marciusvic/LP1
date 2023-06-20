@@ -1,0 +1,145 @@
+\hypertarget{class_turma}{}\doxysection{Referência da Classe Turma}
+\label{class_turma}\index{Turma@{Turma}}
+
+
+Representa uma turma com capacidade, vagas e lista de alunos.  
+
+
+
+
+{\ttfamily \#include $<$turma.\+h$>$}
+
+\doxysubsection*{Membros Públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_turma_a4041d7ab2de264543145aab5f8c881b2}{Turma}} (int \+\_\+capacidade, int \+\_\+vagas)
+\begin{DoxyCompactList}\small\item\em Construtor da classe \mbox{\hyperlink{class_turma}{Turma}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_turma_ac9901558278461593150226ed06567e2}{$\sim$\+Turma}} ()
+\begin{DoxyCompactList}\small\item\em Destrutor da classe \mbox{\hyperlink{class_turma}{Turma}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_turma_a87071a5806725a5061c8033a043bbe6f}{set\+Capacidade}} (int \+\_\+capacidade)
+\begin{DoxyCompactList}\small\item\em Define a capacidade total da turma. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_turma_ae4596b29be56657b69d9f298890d024f}{set\+Vagas}} (int \+\_\+vagas)
+\begin{DoxyCompactList}\small\item\em Define o número de vagas disponíveis na turma. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_turma_a9327e7d8b4e3752e10f20ac361404167}{preencher\+Aluno}} (int i, int matricula, std\+::string nome, float nota1, float nota2, float nota3)
+\begin{DoxyCompactList}\small\item\em Preenche os dados de um aluno na posição especificada. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_turma_a91b651ff4ec0e5b0216377b907b0efcd}{ordenar\+Por\+Matricula}} ()
+\begin{DoxyCompactList}\small\item\em Ordena a lista de alunos por matrícula. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_turma_a845d47151c529b7047ac4241f6f4cd8f}{imprimir\+Alunos}} ()
+\begin{DoxyCompactList}\small\item\em Imprime os dados dos alunos da turma, ordenados por matrícula. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrição detalhada}
+Representa uma turma com capacidade, vagas e lista de alunos. 
+
+\doxysubsection{Construtores e Destrutores}
+\mbox{\Hypertarget{class_turma_a4041d7ab2de264543145aab5f8c881b2}\label{class_turma_a4041d7ab2de264543145aab5f8c881b2}} 
+\index{Turma@{Turma}!Turma@{Turma}}
+\index{Turma@{Turma}!Turma@{Turma}}
+\doxysubsubsection{\texorpdfstring{Turma()}{Turma()}}
+{\footnotesize\ttfamily Turma\+::\+Turma (\begin{DoxyParamCaption}\item[{int}]{\+\_\+capacidade,  }\item[{int}]{\+\_\+vagas }\end{DoxyParamCaption})}
+
+
+
+Construtor da classe \mbox{\hyperlink{class_turma}{Turma}}. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em \+\_\+capacidade} & A capacidade total da turma. \\
+\hline
+{\em \+\_\+vagas} & O número de vagas disponíveis na turma. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_turma_ac9901558278461593150226ed06567e2}\label{class_turma_ac9901558278461593150226ed06567e2}} 
+\index{Turma@{Turma}!````~Turma@{$\sim$Turma}}
+\index{````~Turma@{$\sim$Turma}!Turma@{Turma}}
+\doxysubsubsection{\texorpdfstring{$\sim$Turma()}{~Turma()}}
+{\footnotesize\ttfamily Turma\+::$\sim$\+Turma (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destrutor da classe \mbox{\hyperlink{class_turma}{Turma}}. 
+
+
+
+\doxysubsection{Documentação das funções}
+\mbox{\Hypertarget{class_turma_a845d47151c529b7047ac4241f6f4cd8f}\label{class_turma_a845d47151c529b7047ac4241f6f4cd8f}} 
+\index{Turma@{Turma}!imprimirAlunos@{imprimirAlunos}}
+\index{imprimirAlunos@{imprimirAlunos}!Turma@{Turma}}
+\doxysubsubsection{\texorpdfstring{imprimirAlunos()}{imprimirAlunos()}}
+{\footnotesize\ttfamily void Turma\+::imprimir\+Alunos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Imprime os dados dos alunos da turma, ordenados por matrícula. 
+
+\mbox{\Hypertarget{class_turma_a91b651ff4ec0e5b0216377b907b0efcd}\label{class_turma_a91b651ff4ec0e5b0216377b907b0efcd}} 
+\index{Turma@{Turma}!ordenarPorMatricula@{ordenarPorMatricula}}
+\index{ordenarPorMatricula@{ordenarPorMatricula}!Turma@{Turma}}
+\doxysubsubsection{\texorpdfstring{ordenarPorMatricula()}{ordenarPorMatricula()}}
+{\footnotesize\ttfamily void Turma\+::ordenar\+Por\+Matricula (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Ordena a lista de alunos por matrícula. 
+
+\mbox{\Hypertarget{class_turma_a9327e7d8b4e3752e10f20ac361404167}\label{class_turma_a9327e7d8b4e3752e10f20ac361404167}} 
+\index{Turma@{Turma}!preencherAluno@{preencherAluno}}
+\index{preencherAluno@{preencherAluno}!Turma@{Turma}}
+\doxysubsubsection{\texorpdfstring{preencherAluno()}{preencherAluno()}}
+{\footnotesize\ttfamily void Turma\+::preencher\+Aluno (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{int}]{matricula,  }\item[{std\+::string}]{nome,  }\item[{float}]{nota1,  }\item[{float}]{nota2,  }\item[{float}]{nota3 }\end{DoxyParamCaption})}
+
+
+
+Preenche os dados de um aluno na posição especificada. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em i} & A posição do aluno na lista de alunos. \\
+\hline
+{\em matricula} & A matrícula do aluno. \\
+\hline
+{\em nome} & O nome do aluno. \\
+\hline
+{\em nota1} & A nota da primeira avaliação do aluno. \\
+\hline
+{\em nota2} & A nota da segunda avaliação do aluno. \\
+\hline
+{\em nota3} & A nota da terceira avaliação do aluno. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_turma_a87071a5806725a5061c8033a043bbe6f}\label{class_turma_a87071a5806725a5061c8033a043bbe6f}} 
+\index{Turma@{Turma}!setCapacidade@{setCapacidade}}
+\index{setCapacidade@{setCapacidade}!Turma@{Turma}}
+\doxysubsubsection{\texorpdfstring{setCapacidade()}{setCapacidade()}}
+{\footnotesize\ttfamily void Turma\+::set\+Capacidade (\begin{DoxyParamCaption}\item[{int}]{\+\_\+capacidade }\end{DoxyParamCaption})}
+
+
+
+Define a capacidade total da turma. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em \+\_\+capacidade} & A capacidade total da turma. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_turma_ae4596b29be56657b69d9f298890d024f}\label{class_turma_ae4596b29be56657b69d9f298890d024f}} 
+\index{Turma@{Turma}!setVagas@{setVagas}}
+\index{setVagas@{setVagas}!Turma@{Turma}}
+\doxysubsubsection{\texorpdfstring{setVagas()}{setVagas()}}
+{\footnotesize\ttfamily void Turma\+::set\+Vagas (\begin{DoxyParamCaption}\item[{int}]{\+\_\+vagas }\end{DoxyParamCaption})}
+
+
+
+Define o número de vagas disponíveis na turma. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em \+\_\+vagas} & O número de vagas disponíveis na turma. \\
+\hline
+\end{DoxyParams}
+
+
+A documentação para essa classe foi gerada a partir dos seguintes arquivos\+:\begin{DoxyCompactItemize}
+\item 
+Q3/\mbox{\hyperlink{turma_8h}{turma.\+h}}\item 
+Q3/\mbox{\hyperlink{turma_8cpp}{turma.\+cpp}}\end{DoxyCompactItemize}
